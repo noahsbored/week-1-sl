@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body {
+            margin: 0;
+          
+        }
+        header {
+            background-image: url('https://imgs.search.brave.com/qRpewiCotPb_sMxVxx2jDDVX3uD3NCchx_hjUUqadiI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzg1L2Y1/Lzc2Lzg1ZjU3NjEy/MmI3YzU2YjYyOWRk/MWMyNjMyZjdmNDM4/LmpwZw');
+            background-size: cover;
+
+            text-align: center;
+
+            color: black;
+            padding: 20px;
+            font-weight: bold;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        section {
+            margin: 10px 0;
+        }
+        @media screen and (max-width: 600px) {
+            nav, footer {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>yooo whats up</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Profile</a>
+    <a href="#">About</a>
+</nav>
+
+<main>
+    <section>
+        <h2>Section 1</h2>
+        <p>section 2 stuff</p>
+    </section>
+    <section>
+        <h2>Section 2</h2>
+        <p>section 2 stuff</p>
+    </section>
+</main>
+
+<footer>
+    <p>contanct us for more cool things </p>
+</footer>
+
+</body>
+</html>
